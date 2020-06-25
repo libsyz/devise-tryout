@@ -1,0 +1,13 @@
+
+
+<div>
+  <ul>
+    <% @users.each do |u|  %>
+      <li>
+        <p><%= u.email %></p>
+        <%=  link_to "Edit", edit_user_path(u) %>
+      </li>
+    <% end %>
+  </ul>
+</div>
+
